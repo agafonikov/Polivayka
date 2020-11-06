@@ -13,7 +13,5 @@ public class Main {
         pole.addCvetok("Oduvanchik", -0.5, -4);
         pole.addCvetok("Roza", 0.5, -4);
         System.out.println(pole.poschitat());
-        System.out.println((new Cvetok("j", -1, -3)).deg - 180);
-        System.out.println((90 - 108)/2);
     }
 }
