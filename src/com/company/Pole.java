@@ -32,7 +32,7 @@ public class Pole {
         double gradusi = 0;
         for (Cvetok cvetok: cvetoks){
             int novoeKolichestvo = poschitatVZone(cvetok.deg, cvetok.deg + this.deg);
-            double novieGradusi = (cvetok.deg + this.deg)/2;
+            double novieGradusi = (cvetok.deg*2 + this.deg)/2;
             if (novoeKolichestvo == max) return novieGradusi;
             if (kolichestvo < novoeKolichestvo){
                 gradusi = novieGradusi;
@@ -40,7 +40,7 @@ public class Pole {
             }
 
             novoeKolichestvo = poschitatVZone(cvetok.deg, cvetok.deg - this.deg);
-            novieGradusi = (cvetok.deg - this.deg)/2;
+            novieGradusi = (-cvetok.deg - this.deg)/2;
             if (novoeKolichestvo == max) return novieGradusi;
             if (kolichestvo < novoeKolichestvo){
                 gradusi = novieGradusi;
